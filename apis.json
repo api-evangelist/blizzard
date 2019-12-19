@@ -1,0 +1,63 @@
+{
+    "name": "Blizzard",
+    "description": "This is the documentation for the RESTful APIs exposed through the World of Warcraft community site as a service to the World of Warcraft community.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/Blizzard_Entertainment_Logo.svg.png",
+    "tags": [
+        "api provider",
+        "apis.io import",
+        "general data",
+        "have api",
+        "relative data"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/blizzard\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "World of Warcraft",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/Blizzard_Entertainment_Logo.svg.png",
+            "humanURL": "http:\/\/battle.net",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/world-of-warcraft-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/world-of-warcraft.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "API.json - Authoritative",
+            "url": "http:\/\/apis.io\/apisdef\/legacy\/blizzard.json"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/dev.battle.net\/"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/Blizzard"
+        },
+        {
+            "type": "Twitter",
+            "url": "Blizzard_Ent"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/battle.net"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/www.blizzard.com"
+        }
+    ]
+}
