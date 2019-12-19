@@ -1,0 +1,348 @@
+{
+    "id": "d6cf49d9b5f3683c4d718a09a629cb4b",
+    "name": "World of Warcraft",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "2338cf6d709055d527c38e5536cc9857",
+            "name": "Get Character Realm Charactername",
+            "url": "httpsus.battle.net\/api\/wow\/\/character\/{realm}\/{characterName}",
+            "description": "Fetches a single character at a time through an HTTP GET request to a URL describing the character profile resource. By default, a basic dataset will be returned and with each request and zero or more additional fields can be retrieved. The core dataset returned includes the character's realm, name, level, last modified timestamp, thumbnail, race id, achievement points value, gender id and class id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "realm",
+                    "description": "The realm name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "characterName",
+                    "description": "The character name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "Indicates that one or more of the optional datasets is to be retrieved. The list of the optional fields that can be requested:\n- guild: A summary of the guild that the character belongs to. If the character does not belong to a guild and this field is requested, this field will not be exposed.\n- stats: A map of character attributes and stats.\n- talents: A list of talent structures.\n- items: A list of items equipted by the character. Use of this field will also include the average item level and ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d6cf49d9b5f3683c4d718a09a629cb4b",
+            "rawModeData": ""
+        },
+        {
+            "id": "107c696068bc37bedd5c42bcfba1ffd0",
+            "name": "Get Guild Realm Guildname",
+            "url": "httpsus.battle.net\/api\/wow\/\/guild\/{realm}\/{guildName}",
+            "description": "Fetches a single guild at a time through an HTTP GET request to a url describing the guild profile resource. By default, a basic dataset will be returned and with each request and zero or more additional fields can be retrieved. The core dataset returned includes the guild's name, level, faction and achievement points.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "realm",
+                    "description": "The realm name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "guildName",
+                    "description": "The guild name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "Indicates that one or more of the optional datasets is to be retrieved. The list of the optional fields that can be requested:\n- guild: A summary of the guild that the character belongs to. If the character does not belong to a guild and this field is requested, this field will not be exposed.\n- stats: A map of character attributes and stats.\n- talents: A list of talent structures.\n- items: A list of items equipted by the character. Use of this field will also include the average item level and ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d6cf49d9b5f3683c4d718a09a629cb4b",
+            "rawModeData": ""
+        },
+        {
+            "id": "0879f245009801095dfa678c93d5d14d",
+            "name": "Get Realm Status",
+            "url": "httpsus.battle.net\/api\/wow\/\/realm\/status",
+            "description": "Retrieves realms status information. This information is limited to whether or not the realm is up, the type and state of the realm and the current population.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d6cf49d9b5f3683c4d718a09a629cb4b",
+            "rawModeData": ""
+        },
+        {
+            "id": "7b56f2d0d8074e62d0e91ee9faf42421",
+            "name": "Get Auction Data Realm",
+            "url": "httpsus.battle.net\/api\/wow\/\/auction\/data\/{realm}",
+            "description": "Provides a per-realm list of recently generated auction house data dumps. The current auctions data is represented as JSON structures containing auction data for the tree auctions houses available on each realm.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "realm",
+                    "description": "The realm name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d6cf49d9b5f3683c4d718a09a629cb4b",
+            "rawModeData": ""
+        },
+        {
+            "id": "17e795a3dce111d42bfe7ad94f6dbe17",
+            "name": "Get Item Itemid",
+            "url": "httpsus.battle.net\/api\/wow\/\/item\/{itemId}",
+            "description": "Provides detailed item information.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "itemId",
+                    "description": "The item ID.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d6cf49d9b5f3683c4d718a09a629cb4b",
+            "rawModeData": ""
+        },
+        {
+            "id": "5119304466a48e20534bec69c0706977",
+            "name": "Get Arena Realm Teamsize Teamname",
+            "url": "httpsus.battle.net\/api\/wow\/\/arena\/{realm}\/{teamSize}\/{teamName}",
+            "description": "Provides detailed arena team information.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "realm",
+                    "description": "The realm name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "teamSize",
+                    "description": "The team size.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "teamName",
+                    "description": "The team name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d6cf49d9b5f3683c4d718a09a629cb4b",
+            "rawModeData": ""
+        },
+        {
+            "id": "2cf9810ad6fd6b602a27c500c771365d",
+            "name": "Get Data Character Races",
+            "url": "httpsus.battle.net\/api\/wow\/\/data\/character\/races",
+            "description": "Provides a list of character races.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d6cf49d9b5f3683c4d718a09a629cb4b",
+            "rawModeData": ""
+        },
+        {
+            "id": "87521deae234b7389bb600bd8921a9ea",
+            "name": "Get Data Character Classes",
+            "url": "httpsus.battle.net\/api\/wow\/\/data\/character\/classes",
+            "description": "Provides a list of character classes.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d6cf49d9b5f3683c4d718a09a629cb4b",
+            "rawModeData": ""
+        },
+        {
+            "id": "c6e9274728f00edbecece65d200ce1aa",
+            "name": "Get Data Guild Rewards",
+            "url": "httpsus.battle.net\/api\/wow\/\/data\/guild\/rewards",
+            "description": "Provides a list of all guild rewards.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d6cf49d9b5f3683c4d718a09a629cb4b",
+            "rawModeData": ""
+        },
+        {
+            "id": "d72b653e28d0512ec5b8e0a516c81f8c",
+            "name": "Get Data Guild Perks",
+            "url": "httpsus.battle.net\/api\/wow\/\/data\/guild\/perks",
+            "description": "Provides a list of all guild perks.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d6cf49d9b5f3683c4d718a09a629cb4b",
+            "rawModeData": ""
+        },
+        {
+            "id": "6861a23fa6f213e83b54340c03852bd3",
+            "name": "Get Data Item Classes",
+            "url": "httpsus.battle.net\/api\/wow\/\/data\/item\/classes",
+            "description": "Provides a list of item classes.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d6cf49d9b5f3683c4d718a09a629cb4b",
+            "rawModeData": ""
+        }
+    ]
+}
