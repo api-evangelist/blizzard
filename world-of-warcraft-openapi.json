@@ -1,0 +1,176 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "World of Warcraft",
+        "description": "Welcome to the RESTful APIs exposed through the World of Warcraft community site as a service to the World of Warcraft community.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsus.battle.net\/api\/wow\/"
+    ],
+    "paths": {
+        "\/character\/{realm}\/{characterName}": {
+            "get": {
+                "summary": "Get Character Realm Charactername",
+                "description": "Fetches a single character at a time through an HTTP GET request to a URL describing the character profile resource. By default, a basic dataset will be returned and with each request and zero or more additional fields can be retrieved. The core dataset returned includes the character's realm, name, level, last modified timestamp, thumbnail, race id, achievement points value, gender id and class id.",
+                "operationId": "GetCharacterRealmCharactername",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "realm",
+                        "in": "path",
+                        "description": "The realm name."
+                    },
+                    {
+                        "name": "characterName",
+                        "in": "path",
+                        "description": "The character name."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Indicates that one or more of the optional datasets is to be retrieved. The list of the optional fields that can be requested:\n- guild: A summary of the guild that the character belongs to. If the character does not belong to a guild and this field is requested, this field will not be exposed.\n- stats: A map of character attributes and stats.\n- talents: A list of talent structures.\n- items: A list of items equipted by the character. Use of this field will also include the average item level and "
+                    }
+                ]
+            }
+        },
+        "\/guild\/{realm}\/{guildName}": {
+            "get": {
+                "summary": "Get Guild Realm Guildname",
+                "description": "Fetches a single guild at a time through an HTTP GET request to a url describing the guild profile resource. By default, a basic dataset will be returned and with each request and zero or more additional fields can be retrieved. The core dataset returned includes the guild's name, level, faction and achievement points.",
+                "operationId": "GetGuildRealmGuildname",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "realm",
+                        "in": "path",
+                        "description": "The realm name."
+                    },
+                    {
+                        "name": "guildName",
+                        "in": "path",
+                        "description": "The guild name."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Indicates that one or more of the optional datasets is to be retrieved. The list of the optional fields that can be requested:\n- guild: A summary of the guild that the character belongs to. If the character does not belong to a guild and this field is requested, this field will not be exposed.\n- stats: A map of character attributes and stats.\n- talents: A list of talent structures.\n- items: A list of items equipted by the character. Use of this field will also include the average item level and "
+                    }
+                ]
+            }
+        },
+        "\/realm\/status": {
+            "get": {
+                "summary": "Get Realm Status",
+                "description": "Retrieves realms status information. This information is limited to whether or not the realm is up, the type and state of the realm and the current population.",
+                "operationId": "GetRealmStatus",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/auction\/data\/{realm}": {
+            "get": {
+                "summary": "Get Auction Data Realm",
+                "description": "Provides a per-realm list of recently generated auction house data dumps. The current auctions data is represented as JSON structures containing auction data for the tree auctions houses available on each realm.",
+                "operationId": "GetAuctionDataRealm",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "realm",
+                        "in": "path",
+                        "description": "The realm name."
+                    }
+                ]
+            }
+        },
+        "\/item\/{itemId}": {
+            "get": {
+                "summary": "Get Item Itemid",
+                "description": "Provides detailed item information.",
+                "operationId": "GetItemItem",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "itemId",
+                        "in": "path",
+                        "description": "The item ID."
+                    }
+                ]
+            }
+        },
+        "\/arena\/{realm}\/{teamSize}\/{teamName}": {
+            "get": {
+                "summary": "Get Arena Realm Teamsize Teamname",
+                "description": "Provides detailed arena team information.",
+                "operationId": "GetArenaRealmTeamsizeTeamname",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "realm",
+                        "in": "path",
+                        "description": "The realm name."
+                    },
+                    {
+                        "name": "teamSize",
+                        "in": "path",
+                        "description": "The team size."
+                    },
+                    {
+                        "name": "teamName",
+                        "in": "path",
+                        "description": "The team name."
+                    }
+                ]
+            }
+        },
+        "\/data\/character\/races": {
+            "get": {
+                "summary": "Get Data Character Races",
+                "description": "Provides a list of character races.",
+                "operationId": "GetDataCharacterRaces",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/data\/character\/classes": {
+            "get": {
+                "summary": "Get Data Character Classes",
+                "description": "Provides a list of character classes.",
+                "operationId": "GetDataCharacterClasses",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/data\/guild\/rewards": {
+            "get": {
+                "summary": "Get Data Guild Rewards",
+                "description": "Provides a list of all guild rewards.",
+                "operationId": "GetDataGuildRewards",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/data\/guild\/perks": {
+            "get": {
+                "summary": "Get Data Guild Perks",
+                "description": "Provides a list of all guild perks.",
+                "operationId": "GetDataGuildPerks",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/data\/item\/classes": {
+            "get": {
+                "summary": "Get Data Item Classes",
+                "description": "Provides a list of item classes.",
+                "operationId": "GetDataItemClasses",
+                "deprecated": 0,
+                "parameters": []
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
