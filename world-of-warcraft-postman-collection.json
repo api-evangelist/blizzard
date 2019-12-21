@@ -1,5 +1,5 @@
 {
-    "id": "d6cf49d9b5f3683c4d718a09a629cb4b",
+    "id": "a7d2c3620e34729c7b598b1bdc9266d7",
     "name": "World of Warcraft",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "2338cf6d709055d527c38e5536cc9857",
+            "id": "3ad495e1b0d69c12eb9fc51a039b48b0",
             "name": "Get Character Realm Charactername",
             "url": "httpsus.battle.net\/api\/wow\/\/character\/{realm}\/{characterName}",
             "description": "Fetches a single character at a time through an HTTP GET request to a URL describing the character profile resource. By default, a basic dataset will be returned and with each request and zero or more additional fields can be retrieved. The core dataset returned includes the character's realm, name, level, last modified timestamp, thumbnail, race id, achievement points value, gender id and class id.",
@@ -51,11 +51,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d6cf49d9b5f3683c4d718a09a629cb4b",
+            "collectionId": "a7d2c3620e34729c7b598b1bdc9266d7",
             "rawModeData": ""
         },
         {
-            "id": "107c696068bc37bedd5c42bcfba1ffd0",
+            "id": "fdff0ab406020fc2e94c2ad0a95f4d41",
             "name": "Get Guild Realm Guildname",
             "url": "httpsus.battle.net\/api\/wow\/\/guild\/{realm}\/{guildName}",
             "description": "Fetches a single guild at a time through an HTTP GET request to a url describing the guild profile resource. By default, a basic dataset will be returned and with each request and zero or more additional fields can be retrieved. The core dataset returned includes the guild's name, level, faction and achievement points.",
@@ -96,11 +96,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d6cf49d9b5f3683c4d718a09a629cb4b",
+            "collectionId": "a7d2c3620e34729c7b598b1bdc9266d7",
             "rawModeData": ""
         },
         {
-            "id": "0879f245009801095dfa678c93d5d14d",
+            "id": "db018a5f64d42bad21e39b81dc06f34e",
             "name": "Get Realm Status",
             "url": "httpsus.battle.net\/api\/wow\/\/realm\/status",
             "description": "Retrieves realms status information. This information is limited to whether or not the realm is up, the type and state of the realm and the current population.",
@@ -119,11 +119,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d6cf49d9b5f3683c4d718a09a629cb4b",
+            "collectionId": "a7d2c3620e34729c7b598b1bdc9266d7",
             "rawModeData": ""
         },
         {
-            "id": "7b56f2d0d8074e62d0e91ee9faf42421",
+            "id": "8b2ae4adb3e3a3571be064cb82679be2",
             "name": "Get Auction Data Realm",
             "url": "httpsus.battle.net\/api\/wow\/\/auction\/data\/{realm}",
             "description": "Provides a per-realm list of recently generated auction house data dumps. The current auctions data is represented as JSON structures containing auction data for the tree auctions houses available on each realm.",
@@ -150,11 +150,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d6cf49d9b5f3683c4d718a09a629cb4b",
+            "collectionId": "a7d2c3620e34729c7b598b1bdc9266d7",
             "rawModeData": ""
         },
         {
-            "id": "17e795a3dce111d42bfe7ad94f6dbe17",
+            "id": "16a91125e99fb9d5e550780dbef03c7f",
             "name": "Get Item Itemid",
             "url": "httpsus.battle.net\/api\/wow\/\/item\/{itemId}",
             "description": "Provides detailed item information.",
@@ -181,11 +181,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d6cf49d9b5f3683c4d718a09a629cb4b",
+            "collectionId": "a7d2c3620e34729c7b598b1bdc9266d7",
             "rawModeData": ""
         },
         {
-            "id": "5119304466a48e20534bec69c0706977",
+            "id": "e7269972fbd89e1c6c32b9065a7cb7d7",
             "name": "Get Arena Realm Teamsize Teamname",
             "url": "httpsus.battle.net\/api\/wow\/\/arena\/{realm}\/{teamSize}\/{teamName}",
             "description": "Provides detailed arena team information.",
@@ -226,11 +226,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d6cf49d9b5f3683c4d718a09a629cb4b",
+            "collectionId": "a7d2c3620e34729c7b598b1bdc9266d7",
             "rawModeData": ""
         },
         {
-            "id": "2cf9810ad6fd6b602a27c500c771365d",
+            "id": "5275020f8fc6e134f27b58d84637e6e8",
             "name": "Get Data Character Races",
             "url": "httpsus.battle.net\/api\/wow\/\/data\/character\/races",
             "description": "Provides a list of character races.",
@@ -249,11 +249,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d6cf49d9b5f3683c4d718a09a629cb4b",
+            "collectionId": "a7d2c3620e34729c7b598b1bdc9266d7",
             "rawModeData": ""
         },
         {
-            "id": "87521deae234b7389bb600bd8921a9ea",
+            "id": "ffcd7d4bae9bd478db74b73566e32a27",
             "name": "Get Data Character Classes",
             "url": "httpsus.battle.net\/api\/wow\/\/data\/character\/classes",
             "description": "Provides a list of character classes.",
@@ -272,11 +272,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d6cf49d9b5f3683c4d718a09a629cb4b",
+            "collectionId": "a7d2c3620e34729c7b598b1bdc9266d7",
             "rawModeData": ""
         },
         {
-            "id": "c6e9274728f00edbecece65d200ce1aa",
+            "id": "52555ed58ff064e3539b8372d356783a",
             "name": "Get Data Guild Rewards",
             "url": "httpsus.battle.net\/api\/wow\/\/data\/guild\/rewards",
             "description": "Provides a list of all guild rewards.",
@@ -295,11 +295,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d6cf49d9b5f3683c4d718a09a629cb4b",
+            "collectionId": "a7d2c3620e34729c7b598b1bdc9266d7",
             "rawModeData": ""
         },
         {
-            "id": "d72b653e28d0512ec5b8e0a516c81f8c",
+            "id": "670d8072cb8a638fabad971e32206f5c",
             "name": "Get Data Guild Perks",
             "url": "httpsus.battle.net\/api\/wow\/\/data\/guild\/perks",
             "description": "Provides a list of all guild perks.",
@@ -318,11 +318,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d6cf49d9b5f3683c4d718a09a629cb4b",
+            "collectionId": "a7d2c3620e34729c7b598b1bdc9266d7",
             "rawModeData": ""
         },
         {
-            "id": "6861a23fa6f213e83b54340c03852bd3",
+            "id": "dbc219f87b95f53ea16ba4b63d68c7c7",
             "name": "Get Data Item Classes",
             "url": "httpsus.battle.net\/api\/wow\/\/data\/item\/classes",
             "description": "Provides a list of item classes.",
@@ -341,7 +341,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d6cf49d9b5f3683c4d718a09a629cb4b",
+            "collectionId": "a7d2c3620e34729c7b598b1bdc9266d7",
             "rawModeData": ""
         }
     ]
