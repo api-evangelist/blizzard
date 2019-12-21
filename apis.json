@@ -9,8 +9,8 @@
         "have api",
         "relative data"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-20",
+    "modified": "2019-12-20",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/blizzard\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -24,11 +24,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/world-of-warcraft-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/world-of-warcraft.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/world-of-warcraft.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/blizzard\/master\/world-of-warcraft-openapi.json"
                 }
             ]
         }
@@ -38,6 +38,10 @@
         {
             "type": "API.json - Authoritative",
             "url": "http:\/\/apis.io\/apisdef\/legacy\/blizzard.json"
+        },
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
         },
         {
             "type": "Developers",
